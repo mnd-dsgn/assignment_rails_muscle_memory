@@ -1,4 +1,6 @@
 AssignmentRailsMuscleMemory::Application.routes.draw do
+  resources :schmarticles
+
   root to: 'articles#new'
-  resources :articles, :only => [:new, :create, :show, :index, :edit, :update]
+  resources :articles 
 end
